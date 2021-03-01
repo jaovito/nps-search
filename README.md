@@ -29,7 +29,7 @@ Lembrando que o endpoint da url deve ser "answers"
 
 ## Rotas de usuários
 
-## User Collection [/users]
+## Coleção de Usuários [/users]
 
 ### Criar um usuário para pesquisa [POST]
 
@@ -58,9 +58,9 @@ Você pode cadastrar um usuário para realizar a pesquisa com ele.
                 }
                 
                 
-## Survey Collection [/surveys]
+## Coleção de enquetes [/surveys]
 
-### Listar todos usuários [GET]
+### Listar todas enquetes [GET]
 
 + Response 200 (application/json)
 
@@ -73,3 +73,19 @@ Você pode cadastrar um usuário para realizar a pesquisa com ele.
           }
           ...
         ]
+
+### Criar uma nova enquete [POST]
+
+Você pode criar uma nova enquete, colocando um título e descrição para enviar esta enquete para os usuários futuramente.
+
++ title (string) - Título da enquete
++ description (string) - Uma breve descrição sobre a enquete
+
++ Request (application/json)
+
+            {
+                "title": "Are you satisfied?",
+                "description": "Are you satisfied with our application?"
+            }
+           
+ 
