@@ -47,21 +47,24 @@ Você pode cadastrar um usuário para realizar a pesquisa com ele.
 
 + Request (application/json)
 
+```json
             {
                 "name": "John Doe",
                 "email": "johndoe@example.com"
             }
+```
             
             
 + Response 201 (application/json)
-
     + Body
 
+```json
                 {
                     "id": "bf175178-659c-4d36-b307-59f502da47ea",
                     "name": "John Doe",
                     "email": "johndoe@example.com",
                 }
+```
                 
                 
 ## Coleção de enquetes [/surveys]
@@ -69,7 +72,9 @@ Você pode cadastrar um usuário para realizar a pesquisa com ele.
 ### Listar todas enquetes [GET]
 
 + Response 200 (application/json)
-
+    + Body
+    
+```json
         [
           {
             "id": "e3c1e0fd-4a2e-4606-b33d-81b24f17f62c",
@@ -79,6 +84,7 @@ Você pode cadastrar um usuário para realizar a pesquisa com ele.
           }
           ...
         ]
+```
 
 ### Criar uma nova enquete [POST]
 
@@ -88,10 +94,22 @@ Você pode criar uma nova enquete, colocando um título e descrição para envia
 + description (string) - Uma breve descrição sobre a enquete
 
 + Request (application/json)
+    + Body
 
+```json
             {
                 "title": "Are you satisfied?",
                 "description": "Are you satisfied with our application?"
             }
+```
            
- 
++ Response 201 (application/json)
+    + Body
+
+```json
+            {
+                "id": "e3c1e0fd-4a2e-4606-b33d-81b24f17f62c",
+                "title": "Are you satisfied?",
+                "description": "Are you satisfied with our application?"
+            }
+```
