@@ -6,6 +6,7 @@ Essa é uma api onde é realizado o envio de pesquisa sobre a satisfação do us
 + NodeJs
 + TypeScript
 + Express
++ Jest
 + Yup
 + Typeorm
 + Handlebars
