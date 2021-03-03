@@ -12,7 +12,7 @@ Essa é uma api onde é realizado o envio de pesquisa sobre a satisfação do us
 + Handlebars
 + Nodemailer + Ethereal
 
-## Instalação
+## Instalação e start do servidor
 Primeiro você precisa clonar o repositório em uma pasta de sua preferência, já dentro da pasta execute o comando:
 ```sh
 $ git clone https://github.com/jaovito/nps.git
@@ -21,6 +21,11 @@ $ git clone https://github.com/jaovito/nps.git
 Após clonar o repósitório você precisa acessar na pasta clonada e rodar o comando:
 ```sh
 $ npm install # ou yarn install
+```
+
+Com todas as dependências instaladas basta rodar o seguinte comando para iniciar o servidor em desenvolvimento:
+```sh
+$ npm run dev # ou yarn dev
 ```
 
 Assim que todas as bibliotecas forem instaladas é só buscar pelo arquivo .env.example e substituir seu nome por ".env" apenas, além disso deve alterar o conteúdo de URL_EMAIL_API para sua URL local, como no exemplo abaixo:
