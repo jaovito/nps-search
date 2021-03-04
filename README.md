@@ -61,7 +61,7 @@ Com todas as dependências instaladas e as variáveis ambiente configuradas, bas
 $ npm run dev # ou yarn dev
 ```
 
-## Rotas
+## 🛣 Rotas
 
 ## Coleção de Usuários [/users]
 
