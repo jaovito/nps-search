@@ -73,6 +73,21 @@ $ npm run dev # ou yarn dev
 ```
 
 
+## Testes
+
+# Testes presentes
++ Users
+  + Criação de usuário
+  + Bloqueio de cadastro se usuário já existe
+
++ Surveys
+  + Criação de uma pesquisa/enquete
+  + Listagem de uma pesquisa/enquete
+
+para rodar os testes basta rodar o seguinte comando:
+```sh
+$ npm run test # ou yarn test
+```
 
 
 ## 🛣 Rotas
