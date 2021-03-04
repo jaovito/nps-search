@@ -4,6 +4,7 @@
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-diagrama">Diagrama</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-instalação-e-configuração">Instalação e configuração</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-rotas">Rotas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-licença">Licença</a>
 </p>
@@ -40,7 +41,8 @@ Esse projeto foi desenvolvido durante a trilha de NodeJS, na quarta edição da 
 ## 🔶 Diagrama
 <img src="public/diagrama.png" alt="Diagrama da aplicação" />
 
-## Instalação e start do servidor
+
+## 🚀 Instalação e configuração
 Primeiro você precisa clonar o repositório em uma pasta de sua preferência, já dentro da pasta execute o comando:
 ```sh
 $ git clone https://github.com/jaovito/nps.git
@@ -54,7 +56,8 @@ $ npm install # ou yarn install
 Assim que todas as bibliotecas forem instaladas é só buscar pelo arquivo .env.example e substituir seu nome por ".env" apenas, além disso deve alterar o conteúdo de URL_EMAIL_API para sua URL local, como no exemplo abaixo:
 
                 API_EMAIL_URL=http://localhost:3333/answers
-Lembrando que o endpoint da url deve ser "answers"
+                
+Lembrando que o endpoint da url deve ser "answers" e que em produção a porta de execução é 3333.
 
 Com todas as dependências instaladas e as variáveis ambiente configuradas, basta rodar o seguinte comando para iniciar o servidor em desenvolvimento:
 ```sh
